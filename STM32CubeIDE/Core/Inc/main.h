@@ -58,14 +58,10 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define LED4_Pin GPIO_PIN_0
-#define LED4_GPIO_Port GPIOB
-#define LED1_Pin GPIO_PIN_13
-#define LED1_GPIO_Port GPIOA
-#define LED2_Pin GPIO_PIN_14
-#define LED2_GPIO_Port GPIOA
-#define LED3_Pin GPIO_PIN_15
-#define LED3_GPIO_Port GPIOA
+#define SS_74HC165_Pin GPIO_PIN_1
+#define SS_74HC165_GPIO_Port GPIOB
+#define SS_74HC595_Pin GPIO_PIN_2
+#define SS_74HC595_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
@@ -75,5 +71,3 @@ void Error_Handler(void);
 #endif
 
 #endif /* __MAIN_H */
-
-/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
