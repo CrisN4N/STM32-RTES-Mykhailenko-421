@@ -54,18 +54,16 @@ extern "C" {
 void Error_Handler(void);
 
 /* USER CODE BEGIN EFP */
-
+void Flash_Write_uint8(uint32_t, char[]);
+void Flash_Read_uint8(uint32_t, char[]);
+void Flash_Write_uint16(uint32_t, uint16_t);
+void Flash_Erase_One_Page(uint32_t);
+void Flash_Write_uint32(uint32_t, uint32_t);
+uint32_t Flash_Read_uint32(uint32_t);
+void Flash_Write_uint64(uint32_t, uint64_t);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define LED4_Pin GPIO_PIN_0
-#define LED4_GPIO_Port GPIOB
-#define LED1_Pin GPIO_PIN_13
-#define LED1_GPIO_Port GPIOA
-#define LED2_Pin GPIO_PIN_14
-#define LED2_GPIO_Port GPIOA
-#define LED3_Pin GPIO_PIN_15
-#define LED3_GPIO_Port GPIOA
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
@@ -75,5 +73,3 @@ void Error_Handler(void);
 #endif
 
 #endif /* __MAIN_H */
-
-/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
